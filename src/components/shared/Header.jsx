@@ -2,7 +2,7 @@
 
 /* eslint-disable no-unused-vars */
 import React from 'react'
-
+import { Outlet, Link } from "react-router-dom";
 
 export const Header = ({search, searchHandler}) => {
   return (
@@ -17,22 +17,25 @@ export const Header = ({search, searchHandler}) => {
           <section>
             <ul className="flex gap-3">
               <li>
-                <a
+                <Link
+                  to="/"
                   className="capitalize hover:bg-slate-100 duration-300 rounded-md py-2 px-4 text-sm font-medium text-slate-900"
-                  href="#"
+                  
                 >
                   home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  to="/posts"
                   className="capitalize hover:bg-slate-100 duration-300 rounded-md py-2 px-4 text-sm font-medium text-slate-900"
-                  href="#"
+                  
                 >
-                  post
-                </a>
+                  posts
+                </Link>
               </li>
             </ul>
+            <Outlet />
           </section>
           <section className="flex gap-3">
             <input

@@ -26,7 +26,7 @@ export const Users = () => {
     setSearch(searchTerm);
 
     const filterSearchTerm = users.filter((user) =>
-      user?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase())
+      user?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase()?.trim())
     );
     setFilterSearch(filterSearchTerm);
   };

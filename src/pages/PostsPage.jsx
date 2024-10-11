@@ -6,6 +6,8 @@ export const PostsPage = () => {
   return (
     <div>
         <Header/>
+
+        <p className='mt-28'>Hello, It&apos;s Posts Page </p>
     </div>
   )
 }

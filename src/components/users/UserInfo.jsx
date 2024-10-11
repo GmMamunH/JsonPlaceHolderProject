@@ -6,6 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdLocationCity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
 import { Button } from "../utilitys/Button";
+import { Outlet, Link } from "react-router-dom";
 
 export const UserInfo = ({ userList }) => {
   console.log(userList);
@@ -55,7 +56,10 @@ export const UserInfo = ({ userList }) => {
               <section className="flex gap-4">
                 {/* <button>Posts</button>
                 <button>Albums</button> */}
-                <Button>Posts</Button>
+                <Button>
+                  {" "}
+                  <Link to="/posts">Posts</Link>{" "}
+                </Button>
                 <Button>Albums</Button>
                 <Button>Todos</Button>
               </section>
