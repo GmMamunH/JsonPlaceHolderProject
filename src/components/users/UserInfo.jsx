@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdLocationCity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
-import { Button } from "../button/Button";
+import { Button } from "../utilitys/Button";
 
 export const UserInfo = ({ userList }) => {
   console.log(userList);

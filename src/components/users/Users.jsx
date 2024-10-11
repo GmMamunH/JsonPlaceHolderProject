@@ -4,6 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Header } from "../shared/Header";
 import { UserInfo } from "./UserInfo";
+import { MorePage } from "../utilitys/MorePage";
 
 export const Users = () => {
   const [users, setUsers] = useState([]);
@@ -33,7 +34,7 @@ export const Users = () => {
   return (
     <>
       <Header search={search} searchHandler={searchHandler} />
-      <div className="my-20">
+      <div className="mt-20 mb-8">
         {loading ? (
           <h1 className="text-2xl font-bold text-center text-red-700">
             Wait, data loading...
@@ -48,6 +49,7 @@ export const Users = () => {
           </h1>
         )}
       </div>
+      <MorePage/>
     </>
   );
 };
