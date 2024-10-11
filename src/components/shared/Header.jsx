@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
 
-export const Header = () => {
+export const Header = ({search, searchHandler}) => {
   return (
     <>
       <header className=" bg-white shadow">
@@ -35,18 +36,19 @@ export const Header = () => {
           </section>
           <section className="flex gap-3">
             <input
-              className="py-2 px-4 border border-slate-300 rounded-md text-base font-normal text-slate-400 "
+              className="py-2 px-4 focus:outline-none border border-slate-300 rounded-md text-base font-normal text-slate-400 "
               type="text"
               placeholder="name or username"
+              value={search}
+              onChange={searchHandler}
             />
             <button className="bg-black hover:bg-gray-800 duration-500 text-white rounded-md px-4 font-medium text-sm">
               Search
             </button>
-           
           </section>
         </nav>
       </header>
       {/* ==================================================== */}
     </>
   );
-}
+};
