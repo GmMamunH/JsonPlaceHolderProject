@@ -11,18 +11,17 @@ export const Users = () => {
     axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
       setUsers(response?.data);
       console.log(response?.data);
-      
     });
   }, []);
 
   return (
     <>
       <Header />
-      
+      <div className="my-20">
         {users.map((user) => (
           <UserInfo key={user?.id} userList={user} />
         ))}
-     
+      </div>
     </>
   );
 };

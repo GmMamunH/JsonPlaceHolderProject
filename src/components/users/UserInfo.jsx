@@ -5,14 +5,14 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdLocationCity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
+import { Button } from "../button/Button";
 
-export const UserInfo = ({userList}) => {
-    console.log(userList);
-    
+export const UserInfo = ({ userList }) => {
+  console.log(userList);
+
   return (
     <>
- 
-      <section className="mt-20">
+      <section>
         <div className="grid grid-cols-1  gap-5 mt-5 max-w-screen-sm mx-auto">
           <div className="border shadow rounded-md  p-8 ">
             <div className="flex flex-col gap-4">
@@ -53,15 +53,11 @@ export const UserInfo = ({userList}) => {
                 </p>
               </section>
               <section className="flex gap-4">
-                <button className="bg-black text-white rounded-md px-4 py-2 font-medium text-sm">
-                  Posts
-                </button>
-                <button className="bg-black text-white rounded-md px-4 py-2 font-medium text-sm">
-                  Albums
-                </button>
-                <button className="bg-black text-white rounded-md px-4 py-2 font-medium text-sm">
-                  Todos
-                </button>
+                {/* <button>Posts</button>
+                <button>Albums</button> */}
+                <Button>Posts</Button>
+                <Button>Albums</Button>
+                <Button>Todos</Button>
               </section>
             </div>
           </div>

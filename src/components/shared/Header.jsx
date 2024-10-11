@@ -1,5 +1,7 @@
+
 /* eslint-disable no-unused-vars */
 import React from 'react'
+
 
 export const Header = () => {
   return (
@@ -37,9 +39,10 @@ export const Header = () => {
               type="text"
               placeholder="name or username"
             />
-            <button className="bg-black text-white rounded-md px-4 font-medium text-sm">
+            <button className="bg-black hover:bg-gray-800 duration-500 text-white rounded-md px-4 font-medium text-sm">
               Search
             </button>
+           
           </section>
         </nav>
       </header>
