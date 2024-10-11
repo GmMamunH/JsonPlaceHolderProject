@@ -7,7 +7,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export const MorePage = () => {
   return (
-    <div className="max-w-screen-sm mx-auto bg-white py-2 px-8 mb-4 border border-gray-300 rounded-lg shadow ">
+    <div className="max-w-screen-sm mx-auto bg-white py-2 px-8 mb-20 border border-gray-300 rounded-lg shadow ">
       <div className="flex justify-between items-center">
         <section className="flex gap-2">
           <p className="text-sm text-gray-950 font-medium">Rows per page</p>
