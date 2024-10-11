@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { Header } from '../components/shared/Header'
+import { Posts } from '../components/posts/Posts'
 
 export const PostsPage = () => {
   return (
     <div>
-        <Header/>
+      
+        <Posts/>
 
-        <p className='mt-28'>Hello, It&apos;s Posts Page </p>
+     
     </div>
   )
 }
