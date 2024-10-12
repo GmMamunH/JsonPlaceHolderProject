@@ -9,7 +9,6 @@ import { Button } from "../utilitys/Button";
 import { Outlet, Link } from "react-router-dom";
 
 export const UserInfo = ({ userList }) => {
-  console.log(userList);
 
   return (
     <>

@@ -15,7 +15,6 @@ export const Users = () => {
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
       setUsers(response?.data);
-      console.log(response?.data);
       setLoading(false);
       setFilterSearch(response.data);
     });
@@ -34,7 +33,7 @@ export const Users = () => {
   return (
     <>
       <Header search={search} searchHandler={searchHandler} />
-      <div className="mt-20 mb-8">
+      <div className="mt-32 md:mt-20 px-2 mb-8">
         {loading ? (
           <h1 className="text-2xl font-bold text-center text-red-700">
             Wait, data loading...
@@ -49,8 +48,7 @@ export const Users = () => {
           </h1>
         )}
       </div>
-      <MorePage/>
-      
+      <MorePage />
     </>
   );
 };

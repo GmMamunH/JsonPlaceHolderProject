@@ -8,7 +8,7 @@ export const Header = ({search, searchHandler}) => {
   return (
     <>
       <header className=" bg-white shadow">
-        <nav className="flex justify-between items-center py-2 px-4 fixed top-0 w-full bg-white border">
+        <nav className="grid grid-cols-2 gap-5 md:flex justify-between items-center py-2 px-4 fixed top-0 w-full bg-white border">
           <section>
             <h1 className="text-base text-black font-bold ">
               JSONPlaceholder{" "}
@@ -20,7 +20,6 @@ export const Header = ({search, searchHandler}) => {
                 <Link
                   to="/"
                   className="capitalize hover:bg-slate-100 duration-300 rounded-md py-2 px-4 text-sm font-medium text-slate-900"
-                  
                 >
                   home
                 </Link>
@@ -29,7 +28,6 @@ export const Header = ({search, searchHandler}) => {
                 <Link
                   to="/posts"
                   className="capitalize hover:bg-slate-100 duration-300 rounded-md py-2 px-4 text-sm font-medium text-slate-900"
-                  
                 >
                   posts
                 </Link>
@@ -45,7 +43,7 @@ export const Header = ({search, searchHandler}) => {
               value={search}
               onChange={searchHandler}
             />
-            <button className="bg-black hover:bg-gray-800 duration-500 text-white rounded-md px-4 font-medium text-sm">
+            <button className="bg-black hover:bg-gray-800 duration-500 text-white rounded-md px-4 font-medium text-sm ">
               Search
             </button>
           </section>
