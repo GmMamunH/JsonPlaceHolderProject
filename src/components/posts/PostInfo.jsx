@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import { Button } from '../utilitys/Button';
+import React from "react";
+import { Button } from "../utilitys/Button";
+import { Outlet, Link } from "react-router-dom";
 
-export const PostInfo = ({postList}) => {
-    console.log(postList);
-    
+export const PostInfo = ({ postList }) => {
+  console.log(postList);
+
   return (
     <div>
       <div className="grid grid-cols-1  gap-5 mt-5 max-w-screen-sm mx-auto">
@@ -18,10 +19,13 @@ export const PostInfo = ({postList}) => {
             <p className="text-sm text-gray-900 font-normal">
               {postList?.body}
             </p>
-            <Button>View user profile</Button>
+            <Button>
+              {" "}
+              <Link to="/postDetails">View user profile</Link>{" "}
+            </Button>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
