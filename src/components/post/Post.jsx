@@ -9,7 +9,9 @@ import { Outlet, Link } from "react-router-dom";
 import { Header } from "../shared/Header";
 import { Footer } from "../shared/Footer";
 
+
 export const Post = ({ post }) => {
+
   const [comments, setComments] = useState([]);
   useEffect(() => {
     axios

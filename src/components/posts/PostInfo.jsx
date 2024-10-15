@@ -21,7 +21,7 @@ export const PostInfo = ({ postList }) => {
             </p>
             <Button>
               {" "}
-              <Link to="/postDetails">View user profile</Link>{" "}
+              <Link to={`/postDetails/${postList.id}`}>View user profile</Link>{" "}
             </Button>
           </div>
         </div>
