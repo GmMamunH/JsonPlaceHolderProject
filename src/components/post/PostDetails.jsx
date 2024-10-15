@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { Post } from "./Post";
+import { Post } from "./post";
 
 export const PostDetails = () => {
   const { id } = useParams(); // Get post ID from the URL
